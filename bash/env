@@ -1,3 +1,15 @@
 #Values used by other scripts and applications
-export EDITOR="mate -w"
-export PATH=$PATH:~/bin:/Applications/Xcode.app/Contents/Developer/usr/bin
+#Detect system type
+SYSTYPE=`uname -s`
+
+if [ ${SYSTYPE} == "Darwin" ];
+do
+	export EDITOR="mate -w"
+	export PATH=$PATH:~/bin:/Applications/Xcode.app/Contents/Developer/usr/bin
+fi
+
+if [ ${SYSTYPE} == "Linux" ];
+do
+	export EDITOR="vi"
+	export PATH=$PATH:~/bin
+fi
