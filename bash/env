@@ -2,14 +2,12 @@
 #Detect system type
 SYSTYPE=`uname -s`
 
-if [ ${SYSTYPE} == "Darwin" ];
-do
+if [ ${SYSTYPE} == "Darwin" ];then
 	export EDITOR="mate -w"
 	export PATH=$PATH:~/bin:/Applications/Xcode.app/Contents/Developer/usr/bin
 fi
 
-if [ ${SYSTYPE} == "Linux" ];
-do
+if [ ${SYSTYPE} == "Linux" ];then
 	export EDITOR="vi"
 	export PATH=$PATH:~/bin
 fi
