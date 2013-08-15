@@ -1,1 +1,12 @@
 #Shortcuts and Functions
+
+#General System 
+alias tu="top -o cpu" #top sorted by cpu usage
+alias tm="top -o vsize" #top sorted by cpu usage
+alias h="history"
+
+#Ruby
+alias gemset="rvm gemset name"
+
+#Git
+alias g="git status"
